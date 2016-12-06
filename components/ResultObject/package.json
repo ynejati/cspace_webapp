@@ -1,0 +1,6 @@
+{
+  "name": "ResultObject",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ResultObject.js"
+}
