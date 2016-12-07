@@ -5,6 +5,10 @@
     "chunk": "main"
   },
   {
+    "path": "/collections",
+    "page": "./pages/collections"
+  },
+  {
     "path": "/error",
     "page": "./pages/error",
     "chunk": "main"

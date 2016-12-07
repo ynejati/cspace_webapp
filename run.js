@@ -17,9 +17,9 @@ const webpack = require('webpack');
 
 // TODO: Update configuration settings
 const config = {
-  title: 'React Static Boilerplate',        // Your website title
-  url: 'https://rsb.kriasoft.com',          // Your website URL
-  project: 'react-static-boilerplate',      // Firebase project. See README.md -> How to Deploy
+  title: 'CollectionSpace Demo Web App',        // Your website title
+  url: 'http://yousufnejati.com',          // Your website URL
+  project: 'cspace-demo-webapp',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
 };
 
@@ -134,8 +134,8 @@ tasks.set('start', () => {
       // For more information visit https://browsersync.io/docs/options
       if (++count === 1) {
         bs.init({
-          port: process.env.PORT || 3000,
-          ui: { port: Number(process.env.PORT || 3000) + 1 },
+          port: process.env.PORT || 9876,
+          ui: { port: Number(process.env.PORT || 9876) + 1 },
           server: {
             baseDir: 'public',
             middleware: [

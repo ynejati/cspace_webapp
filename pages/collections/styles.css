@@ -1,15 +1,72 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- *
- * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-/**
- * Paging
- */
+
+
+.width {
+  width: 100%;
+}
+
+.searchContainer{
+
+}
+
+.thumbContainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumb {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.searchBar{
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  padding: 6px 9px 0;
+}
+
+.summaryTable {
+  width: 100%;
+  text-align: left;
+  display: inline-table;
+  table-layout: fixed;
+  margin: auto;
+}
+
+.dataTable{
+  table-layout: fixed;
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+
+.textTitleCell {
+  vertical-align: top;
+  height: auto;
+  width: 65px;
+  word-wrap: normal;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.textContentCell{
+  height: auto;
+  vertical-align: top;
+  word-wrap: normal;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.summaryTable > tr {
+
+}
+
+img {
+  padding: 4px;
+}
 
 .mdl-paging {
   color: rgba(0, 0, 0, 0.54);
@@ -128,6 +185,7 @@
   opacity: 1;
   transform: rotate(0deg);
 }
+
 /* Mini floating buttons */
 
 .mdl-speed-dial .mdl-button--mini-fab {
@@ -140,6 +198,7 @@
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
+
 /* Mini floating buttons animations */
 
 .mdl-speed-dial .mdl-button--mini-fab:nth-of-type(6),

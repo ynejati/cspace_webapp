@@ -25,6 +25,7 @@ class Navigation extends React.Component {
     return (
       <nav className="mdl-navigation mdl-layout--large-screen-only" ref={node => (this.root = node)}>
         <Link className="mdl-navigation__link" to="/">Home</Link>
+        <Link className="mdl-navigation__link" to="/collections">Collections</Link>
         <Link className="mdl-navigation__link" to="/about">About</Link>
       </nav>
     );

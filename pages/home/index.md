@@ -1,6 +1,6 @@
 ---
-title: Collections Search
+title: Home
 ---
 
-## Collections Search
+## Recently updated records
 
