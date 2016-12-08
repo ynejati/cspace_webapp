@@ -22,12 +22,11 @@ class Header extends React.Component {
               <img src="collectionspace_logo.png" alt="CollectionSpace Logo"/>
             </Link>
             <div className="mdl-layout-spacer"></div>
-            <Navigation />
+            {/*<Navigation />*/}
           </div>
         </header>
     );
   }
-
 }
 
 export default Header;

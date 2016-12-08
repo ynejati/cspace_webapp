@@ -22,13 +22,13 @@ class Drawer extends React.Component {
       <div className={`${s.demoDrawer} mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-100`}
            ref={node => (this.root = node)}>
         <header className={s.demoDrawerHeader}>
-          <img src="./collectionspace_drawer_logo.png" className={s.drawerLogo}/>
+          <img src="./collectionspace_drawer_logo_white.png" className={s.drawerLogo}/>
         </header>
         <nav className={`mdl-navigation mdl-color--blue-grey-800 ${s.demoNav}`}>
-          <a id={s.nav} className="mdl-navigation__link" href=""><i className={`${s.space20} mdl-color-text--white material-icons`}
-                                                         role="presentation">home</i>Home</a>
-          <a id={s.nav} className="mdl-navigation__link" href=""><i className={`${s.space20} mdl-color-text--white material-icons`}
-                                                         role="presentation">library_books</i>Collection</a>
+          <Link to="/" id={s.nav} className="mdl-navigation__link"><i className={`${s.space20} mdl-color-text--white material-icons`}
+                                                         role="presentation">home</i>Home</Link>
+          <Link to="/collection" id={s.nav} className="mdl-navigation__link" href=""><i className={`${s.space20} mdl-color-text--white material-icons`}
+                                                         role="presentation">library_books</i>Collection</Link>
           <a id={s.nav} className="mdl-navigation__link" href=""><i className={`${s.space20} mdl-color-text--white material-icons`}
                                                          role="presentation">library_add</i>Acquisition</a>
           <a id={s.nav} className="mdl-navigation__link" href=""><i className={`${s.space20} mdl-color-text--white material-icons`}
@@ -69,7 +69,6 @@ class Drawer extends React.Component {
       </div>
     );
   }
-
 }
 
 export default Drawer;

@@ -1,7 +1,7 @@
 .cardTitle{
   color: #ffffff;
   background: url('./collections_search_banner.jpg') center / cover;
-  height: 200px;
+  height: 150px;
 }
 
 .mdlCardTitleText{
@@ -19,10 +19,10 @@
 
 .searchCard {
   width: auto;
-  padding: 2px;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 40px;
+  padding: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
 
 /* Rules for sizing the icon. */
@@ -37,6 +37,8 @@
 .searchContainer{
   margin-left: 20px;
 }
+
+.margin15L { margin-left: 15px}
 
 .thumbContainer {
   display: block;

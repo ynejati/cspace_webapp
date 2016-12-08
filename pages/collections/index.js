@@ -48,7 +48,7 @@ class CollectionsPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={`${s.searchCard} mdl-card mdl-shadow--3dp`}>
-          <div  className={`${s.cardTitle} mdl-card__title`}>
+          <div className={`${s.cardTitle} mdl-card__title`}>
             <h1 className={`${s.mdlCardTitleText} mdl-card__title-text`}>Collection</h1>
           </div>
           <div className="mdl-card__supporting-text">
@@ -59,15 +59,15 @@ class CollectionsPage extends React.Component {
               <i className={`${s.shareIcon} material-icons`}>share</i>
             </button>
           </div>
-            <div className={s.searchContainer}>
-              <form action="/">
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input className="mdl-textfield__input" type="text" id="search"/>
-                    <label className="mdl-textfield__label" htmlFor="search">
+          <div className={s.searchContainer}>
+            <form action="/">
+              <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input className="mdl-textfield__input" type="text" id="search"/>
+                <label className="mdl-textfield__label" htmlFor="search">
                   <i className={`material-icons ${s.md18}`}>search</i> Search collections...
-                    </label>
-                </div>
-              </form>
+                </label>
+              </div>
+            </form>
           </div>
           <div className="mdl-card__actions mdl-card--border">
             {/*<div id="p1" className="mdl-progress mdl-js-progress"></div>*/}
@@ -242,12 +242,14 @@ class CollectionsPage extends React.Component {
               </div>
             </div>
           </div>
+          <div className={`${s.margin15L} mdl-card--border mdl-card__actions`}>
+            {/*Get the results per page that is selected and the page number, using this to make rest call*/}
+            <Pager/>
+          </div>
         </div>
         <p>
           <br /><br />
         </p>
-        {/*Get the results per page that is selected and the page number, using this to make rest call*/}
-        <Pager/>
       </Layout>
     );
   }
