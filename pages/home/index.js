@@ -18,12 +18,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h4>Articles</h4>
-        <ul>
-          {/*{this.props.articles.map((article, i) =>*/}
-            {/*<li key={i}><a href={article.url}>{article.title}</a> by {article.author}</li>*/}
-          {/*)}*/}
-        </ul>
+        <h1>Welcome!</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </Layout>
     );
   }
@@ -31,7 +27,3 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
-
-/*
-
- */

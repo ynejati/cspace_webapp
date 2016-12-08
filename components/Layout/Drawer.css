@@ -1,0 +1,67 @@
+.drawerLogo {
+  border-radius: 10px;
+}
+
+.demoDrawer {
+  border: none;
+}
+
+.mdl-layout__drawer .avatar {
+  margin-bottom: 16px;
+}
+
+/* iOS Safari specific workaround */
+.demoDrawer .mdl-menu__container {
+  z-index: -1;
+}
+.demoDrawer .demoNav {
+  z-index: -2;
+}
+
+.demoDrawerHeader {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 90px;
+  margin: auto;
+  padding: 5px;
+}
+
+.space20 {
+  margin-right: 10px;
+}
+
+#nav {
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 2px;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+
+
+#nav .material-icons:hover {
+  color: #1b1b1b;
+}
+
+
+#nav:hover {
+  background-color: #6BD0F1;
+  color: #1b1b1b;
+}

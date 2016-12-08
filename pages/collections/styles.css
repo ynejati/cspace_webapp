@@ -1,11 +1,41 @@
+.cardTitle{
+  color: #ffffff;
+  background: url('./collections_search_banner.jpg') center / cover;
+  height: 200px;
+}
 
+.mdlCardTitleText{
+  font-size: 72px;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.shareIcon {
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px black;
+}
+
+.searchCard {
+  width: auto;
+  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 40px;
+}
+
+/* Rules for sizing the icon. */
+.md18 {
+  font-size: 18px;
+}
 
 .width {
   width: 100%;
 }
 
 .searchContainer{
-
+  margin-left: 20px;
 }
 
 .thumbContainer {
@@ -225,18 +255,7 @@ img {
   transition-delay: 200ms;
 }
 
-.searchcard {
-  width: auto;
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 50px;
-}
 
-.searchcard > .mdl_card__title {
-  color: #000;
-  height: 200px;
-}
 
 @media screen and (max-width: 1024px) {
 

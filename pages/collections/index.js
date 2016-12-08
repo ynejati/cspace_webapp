@@ -14,7 +14,6 @@ const cs = cspace({
   password: 'Administrator',
 });
 
-
 class CollectionsPage extends React.Component {
 
   static propTypes = {
@@ -22,53 +21,53 @@ class CollectionsPage extends React.Component {
   };
 
   componentDidMount() {
+
+    componentHandler.upgradeDom();
+
     document.title = title;
 
     // document.querySelector('#p1').addEventListener('mdl-componentupgraded', function () {
     //   this.MaterialProgress.setProgress(44);
     // });
 
-    document.querySelector('#search').addEventListener('keypress', function (e) {
-      var key = e.which || e.keyCode;
-      if (key === 13) {
-        cs.read('')
-          .then(response => log('response', response))
-          .catch(error => log('error', error));
-      }
-    });
+    // document.querySelector('#search').addEventListener('keypress', function (e) {
+    //   var key = e.which || e.keyCode;
+    //   if (key === 13) {
+    //     cs.read('')
+    //       .then(response => log('response', response))
+    //       .catch(error => log('error', error));
+    //   }
+    // });
+  }
 
+  componentDidUpdate() {
+    componentHandler.upgradeDom();
   }
 
   render() {
     return (
       <Layout className={s.content}>
-
-        <div className={`mdl-card mdl-shadow--3dp ${s.searchcard}`}>
-          <div className="mdl-card__title">
-            <h2 className="mdl-card__title-text">Collections Search</h2>
+        <div className={`${s.searchCard} mdl-card mdl-shadow--3dp`}>
+          <div  className={`${s.cardTitle} mdl-card__title`}>
+            <h1 className={`${s.mdlCardTitleText} mdl-card__title-text`}>Collection</h1>
           </div>
           <div className="mdl-card__supporting-text">
-            Search the collections found on the CollectionSpace demo server.
+            Search the collections found on the core CollectionSpace demo server using the search box below.
           </div>
-          <div className="mdl-card__actions mdl-card--border">
+          <div className="mdl-card__menu">
+            <button className="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+              <i className={`${s.shareIcon} material-icons`}>share</i>
+            </button>
+          </div>
             <div className={s.searchContainer}>
-              <table className={`${s.searchBar} mdl-data-table`}>
-                <tbody>
-                <tr>
-                  <td className="mdl-data-table__cell--non-numeric">
-                    <form action="/">
-                      <div className="mdl-textfield mdl-js-textfield">
-                        <label className="mdl-textfield__label" htmlFor="search">
-                          <i className="material-icons">search</i>Search collections..
-                        </label>
-                        <input className="mdl-textfield__input" type="text" id="search"/>
-                      </div>
-                    </form>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
+              <form action="/">
+                <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input className="mdl-textfield__input" type="text" id="search"/>
+                    <label className="mdl-textfield__label" htmlFor="search">
+                  <i className={`material-icons ${s.md18}`}>search</i> Search collections...
+                    </label>
+                </div>
+              </form>
           </div>
           <div className="mdl-card__actions mdl-card--border">
             {/*<div id="p1" className="mdl-progress mdl-js-progress"></div>*/}

@@ -1,6 +1,6 @@
 ---
-title: Collections Search
+title: Collections
 ---
 
-## Collections Search
+## Collections
 
