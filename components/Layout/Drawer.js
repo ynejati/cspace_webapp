@@ -22,7 +22,7 @@ class Drawer extends React.Component {
       <div className={`${s.demoDrawer} mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-100`}
            ref={node => (this.root = node)}>
         <header className={s.demoDrawerHeader}>
-          <img src="./collectionspace_drawer_logo_white.png" className={s.drawerLogo}/>
+          <img className={s.drawerLogo} src="./collectionspace_drawer_logo_white.png" />
         </header>
         <nav className={`mdl-navigation mdl-color--blue-grey-800 ${s.demoNav}`}>
           <Link to="/" id={s.nav} className="mdl-navigation__link"><i className={`${s.space20} mdl-color-text--white material-icons`}

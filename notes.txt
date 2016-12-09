@@ -1,5 +1,13 @@
 Logo:
 
-stacked - logomakr.com/8E99AC (small: logomakr.com/8E99AC white: logomakr.com/811iTv)
+stacked - logomakr.com/8E99AC
+small: logomakr.com/8E99AC
+white: logomakr.com/811iTv
+white + powered by: logomakr.com/9zQG6V
+
+
 favicon - logomakr.com/5ioBWN
 
+full -
+
+grey + powered by: logomakr.com/1eIeJm

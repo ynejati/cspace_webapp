@@ -16,12 +16,12 @@ class Header extends React.Component {
 
   render() {
     return (
-        <header className={`${s.mdlLayoutHeader} mdl-layout__header mdl-layout__header--transparent`} ref={node => (this.root = node)}>
-          <div className={`mdl-layout__header-row ${s.row}`}>
-            <Link className={`mdl-layout-title ${s.title}`} to="/">
-              <img src="collectionspace_logo.png" alt="CollectionSpace Logo"/>
-            </Link>
-            <div className="mdl-layout-spacer"></div>
+        <header className={`mdl-layout__header `} ref={node => (this.root = node)}>
+          <div className={`mdl-layout__header-row ${s.row} mdl-color--blue-grey-800 mdl-shadow--16dp`}>
+            {/*<Link className={`mdl-layout-title ${s.title}`} to="/">*/}
+              {/*/!*<img src="collectionspace_logo.png" alt="CollectionSpace Logo"/>*!/*/}
+            {/*</Link>*/}
+            {/*<div className="mdl-layout-spacer"></div>*/}
             {/*<Navigation />*/}
           </div>
         </header>

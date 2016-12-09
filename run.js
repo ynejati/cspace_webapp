@@ -18,8 +18,8 @@ const webpack = require('webpack');
 // TODO: Update configuration settings
 const config = {
   title: 'CollectionSpace Demo Web App',        // Your website title
-  url: 'http://yousufnejati.com',          // Your website URL
-  project: 'cspace-demo-webapp',      // Firebase project. See README.md -> How to Deploy
+  url: 'http://www.yousufnejati.com',          // Your website URL
+  project: 'collectionspace-demo-web-app',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
 };
 
